@@ -27317,10 +27317,15 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _links = require("../content/links");
 var _linksDefault = parcelHelpers.interopDefault(_links);
+var _useScreenSize = require("../hooks/useScreenSize");
+var _useScreenSizeDefault = parcelHelpers.interopDefault(_useScreenSize);
 var _navbar = require("./Navbar");
 var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _s = $RefreshSig$();
 const { LINKEDIN, GMAIL, GITHUB, TWITTER, RESUME } = (0, _linksDefault.default);
 const Introduction = ()=>{
+    _s();
+    const isMobileorTablet = (0, _useScreenSizeDefault.default)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "relative sticky top-0",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27334,7 +27339,7 @@ const Introduction = ()=>{
                             children: "Manuj Haritwal"
                         }, void 0, false, {
                             fileName: "src/components/Introduction.js",
-                            lineNumber: 11,
+                            lineNumber: 13,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27342,7 +27347,7 @@ const Introduction = ()=>{
                             children: "Full Stack Developer"
                         }, void 0, false, {
                             fileName: "src/components/Introduction.js",
-                            lineNumber: 12,
+                            lineNumber: 14,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27350,13 +27355,13 @@ const Introduction = ()=>{
                             children: "Accomplished Full Stack Developer with over 3 years of professional experience in developing robust and scalable web applications."
                         }, void 0, false, {
                             fileName: "src/components/Introduction.js",
-                            lineNumber: 13,
+                            lineNumber: 15,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Introduction.js",
-                    lineNumber: 10,
+                    lineNumber: 12,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27367,19 +27372,19 @@ const Introduction = ()=>{
                         children: "View My Resume \u2197"
                     }, void 0, false, {
                         fileName: "src/components/Introduction.js",
-                        lineNumber: 17,
+                        lineNumber: 19,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Introduction.js",
-                    lineNumber: 16,
+                    lineNumber: 18,
                     columnNumber: 17
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                isMobileorTablet ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
                     fileName: "src/components/Introduction.js",
-                    lineNumber: 19,
-                    columnNumber: 17
-                }, undefined),
+                    lineNumber: 21,
+                    columnNumber: 35
+                }, undefined) : "",
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "flex justify-between mt-16 px-[10%] text-white",
                     children: [
@@ -27392,12 +27397,12 @@ const Introduction = ()=>{
                                 className: "fab fa-linkedin  me-auto rounded-lg "
                             }, void 0, false, {
                                 fileName: "src/components/Introduction.js",
-                                lineNumber: 22,
+                                lineNumber: 24,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Introduction.js",
-                            lineNumber: 21,
+                            lineNumber: 23,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27409,12 +27414,12 @@ const Introduction = ()=>{
                                 className: "fas fa-envelope me-auto"
                             }, void 0, false, {
                                 fileName: "src/components/Introduction.js",
-                                lineNumber: 25,
+                                lineNumber: 27,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Introduction.js",
-                            lineNumber: 24,
+                            lineNumber: 26,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27426,12 +27431,12 @@ const Introduction = ()=>{
                                 className: "fab fa-github me-auto"
                             }, void 0, false, {
                                 fileName: "src/components/Introduction.js",
-                                lineNumber: 28,
+                                lineNumber: 30,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Introduction.js",
-                            lineNumber: 27,
+                            lineNumber: 29,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27443,32 +27448,37 @@ const Introduction = ()=>{
                                 className: "fab fa-twitter me-auto"
                             }, void 0, false, {
                                 fileName: "src/components/Introduction.js",
-                                lineNumber: 31,
+                                lineNumber: 33,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Introduction.js",
-                            lineNumber: 30,
+                            lineNumber: 32,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Introduction.js",
-                    lineNumber: 20,
+                    lineNumber: 22,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Introduction.js",
-            lineNumber: 9,
+            lineNumber: 11,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Introduction.js",
-        lineNumber: 8,
+        lineNumber: 10,
         columnNumber: 9
     }, undefined);
 };
+_s(Introduction, "wq6lQM+VrmwusmpemGnfwWBncRE=", false, function() {
+    return [
+        (0, _useScreenSizeDefault.default)
+    ];
+});
 _c = Introduction;
 exports.default = Introduction;
 var _c;
@@ -27479,7 +27489,7 @@ $RefreshReg$(_c, "Introduction");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../content/links":"aSRh1","./Navbar":"5EEXV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aSRh1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../content/links":"aSRh1","../hooks/useScreenSize":"1EETn","./Navbar":"5EEXV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aSRh1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const LINKS = {
@@ -27521,7 +27531,180 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"5EEXV":[function(require,module,exports) {
+},{}],"1EETn":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9fc6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9fc6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useScreenSize = ()=>{
+    _s();
+    const [isMobileOrTablet, setIsMobileOrTablet] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            const { innerWidth } = window;
+            setIsMobileOrTablet(innerWidth > 1024); // Adjust this value based on your tablet breakpoint
+        };
+        handleResize(); // Initial call to set the initial state
+        window.addEventListener("resize", handleResize);
+        return ()=>{
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    return isMobileOrTablet;
+};
+_s(useScreenSize, "Ds6pP02AwPtPxMLCeJNISkRep4A=");
+exports.default = useScreenSize;
+
+  $parcel$ReactRefreshHelpers$9fc6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"5EEXV":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8fbf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30295,145 +30478,7 @@ exports.default = ActiveSection;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"eC27k":[function(require,module,exports) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eC27k":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b4e7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30645,7 +30690,7 @@ $RefreshReg$(_c, "AboutMe");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../content/workEx.json":"hAIEn","./skills":"gQKpW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/ActiveSection":"iEVgt","react":"21dqq"}],"hAIEn":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../content/workEx.json":"hAIEn","./skills":"gQKpW","../utils/ActiveSection":"iEVgt","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hAIEn":[function(require,module,exports) {
 module.exports = JSON.parse('{"technicalSkills":[{"id":"Languages & Frameworks","skills":["Java","JavaScript","TypeScript","Tailwind CSS","Bootstrap","ReactJS","Redux","Node.js","Express.js"]},{"id":"Databases & Cloud","skills":["MySQL","MongoDB","Microsoft Azure","Azure Functions","Service Bus","Redis Cache"]},{"id":"Tools & Methodologies","skills":["Git","REST API","Agile","SCRUM","JIRA","Postman"]}],"workExperience":[{"id":"1","duration":"JULY, 2021 - PRESENT","position":"Senior Systems Engineer","company":"Infosys Ltd","companyUrl":"https://www.infosys.com/","location":"Jaipur, India","detailedDescription":[{"topic":"Notable Work","description":"Designed and developed an Azure function to automate all employees\u2019s Workplace profile updates via Service Bus integration, optimizing operational workflows."},{"topic":"Accelerated Application Ticket Resolution","description":"Developed a web application that significantly accelerated application ticket resolution for the client\u2019s team, reducing analysis time by 80%."},{"topic":"Application Maintenance","description":"Ensured seamless operation and maintained high availability of client applications across all locations in North America, proactively identifying and resolving issues."},{"topic":"Performance Optimization","description":"Optimized Azure Functions by implementing performance enhancements and exception handling mechanisms, resulting in improved execution speed and reduced failures."}],"skills":["JavaScript","TypeScript","ReactJS","Redux","MongoDB","Node.js","Serverless Function","Microsoft Azure"]},{"id":"2","duration":"FEB, 2021 - MAY, 2021","position":"Systems Engineer Trainee","company":"Infosys Ltd","companyUrl":"https://www.infosys.com/","location":"Mysuru, India","detailedDescription":[{"topic":"Agile DevOps Monitoring","description":"Developed a web application for tracking task progress in Agile projects, enabling task creation, progress updates, and tracking through dashboards"},{"topic":"Database Architecture","description":"Architected and implemented a highly optimized MySQL database schema, ensuring efficient data storage and retrieval for enhanced application performance."},{"topic":"API Management","description":"Engineered a robust Java Spring Boot application to handle API management and secure data storage, guaranteeing data integrity and reliable functionality."}],"skills":["JavaScript","ReactJS","SpringBoot","MySQL","SCRUM"]}]}');
 
 },{}],"gQKpW":[function(require,module,exports) {
@@ -30889,42 +30934,7 @@ $RefreshReg$(_c, "WorkExCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../hooks/useScreenSize":"1EETn","./skills":"gQKpW","./WorkExHead":"gaD8S","./WorkExDesc":"5c3xL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1EETn":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9fc6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9fc6.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _s = $RefreshSig$();
-const useScreenSize = ()=>{
-    _s();
-    const [isMobileOrTablet, setIsMobileOrTablet] = (0, _react.useState)(false);
-    (0, _react.useEffect)(()=>{
-        const handleResize = ()=>{
-            const { innerWidth } = window;
-            setIsMobileOrTablet(innerWidth > 1024); // Adjust this value based on your tablet breakpoint
-        };
-        handleResize(); // Initial call to set the initial state
-        window.addEventListener("resize", handleResize);
-        return ()=>{
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-    return isMobileOrTablet;
-};
-_s(useScreenSize, "Ds6pP02AwPtPxMLCeJNISkRep4A=");
-exports.default = useScreenSize;
-
-  $parcel$ReactRefreshHelpers$9fc6.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gaD8S":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../hooks/useScreenSize":"1EETn","./skills":"gQKpW","./WorkExHead":"gaD8S","./WorkExDesc":"5c3xL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gaD8S":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d428 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31127,7 +31137,7 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../content/links":"aSRh1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/ActiveSection":"iEVgt"}],"8pPOA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../content/links":"aSRh1","../utils/ActiveSection":"iEVgt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
