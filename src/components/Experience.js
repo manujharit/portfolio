@@ -1,20 +1,39 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router"
 
 const Experience = () => {
+    const startDate = new Date('2021-07-12');
+    const today = new Date();
+    let totalMonths = (today.getFullYear() - startDate.getFullYear()) * 12 + today.getMonth() - startDate.getMonth();
+    if (today.getDate() < startDate.getDate()) {
+        totalMonths--;
+    }
+    const expYears = Math.floor(totalMonths / 12);
+    const expMonths = totalMonths % 12;
+
     return (
-        <div className="flex flex-col my-[5%] mx-[10%]">
-            <div className="flex flex-col items-center justify-center text-center">
-                <div className="bg-purple-400 p-2 w-[116px] h-28 items-center justify-center rounded-xl">
-                    <div className="bg-purple-500 p-[5%] w-[100px] h-24 text-white font-bold rounded-lg flex flex-col justify-center items-center">
-                        <span className="text-3xl ">3</span><span className="text-xs text-center"> Years of Experience</span>
+        <div className="flex flex-col my-[5%] mx-auto max-w-4xl">
+            <div className="flex flex-col items-center justify-center text-justify gap-6">
+                <div className="bg-purple-400 p-2 w-[160px] h-28 flex items-center justify-center rounded-xl shadow-md mx-auto">
+                    <div className="bg-purple-500 p-2 w-full h-full text-white font-bold rounded-lg flex flex-col justify-center items-center shadow-inner">
+                        <div className="flex items-baseline justify-center gap-1">
+                            <span className="text-3xl">{expYears}</span><span className="text-lg">Y</span>
+                            <span className="text-3xl ml-1">{expMonths}</span><span className="text-lg">M</span>
+                        </div>
+                        <span className="text-xs text-center mt-1">of Experience</span>
                     </div>
                 </div>
-                <br />
-                <span className="text-lg mb-[10%]" >During these years of Frontend Development Experience, I have developed a strong problem-solving and critical thinking skills, and am able to quickly adapt to new technologies and methods of working. Given are some skill-set that I have learned and am still actively learning as days goes by</span>
-                <span className="text-2xl font-bold text-blue-900 mb-[2%]">Development</span>
-                <span className="mb-[15%]">Utilizing my full-stack proficiency with React.js and Node.js, I craft visually stunning web applications that prioritize intuitive navigation and user experience. My projects seamlessly combine aesthetic appeal with functional interfaces, each infused with a distinctive touch that elevates the digital experience to extraordinary levels.</span>
-                <span className="text-lg mb-[10%]">That was a short information about the domain that I have previously worked on. while you're at it, have a look at few chosen works that I have created using above domain.</span>
-                <Link to="/work" className="mx-[40%]  text-center text-[80%] shadow-md hover:shadow-inner hover:border  bg-white rounded-xl  shadow-purple-700 border p-[1%] font-bold text-blue-700">Projects</Link>
+                
+                <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto" >
+                    During these years of Full-Stack Development Experience, I have developed strong problem-solving and critical thinking skills, delivering solutions across the development lifecycle. I have successfully contributed to projects ranging from responsive authentication UIs to automated Azure Serverless workflows and API management.
+                </p>
+                <span className="text-2xl font-bold text-blue-900 mt-2 text-center w-full">Development</span>
+                <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                    Utilizing my proficiency with React.js, Node.js, and Cloud Platforms (Azure), I craft robust web applications that prioritize intuitive navigation, system reliability, and user experience. My projects seamlessly combine aesthetic appeal with secure, efficient backend functionality, enhancing both operational efficiency and end-user satisfaction.
+                </p>
+                <p className="text-lg text-gray-600 mt-2 max-w-3xl mx-auto text-center">
+                    That was a brief overview of my professional journey. While you're at it, have a look at a few chosen works that I have created.
+                </p>
+                <Link to="/work" className="mt-4 px-8 py-3 shadow-md hover:shadow-lg transition-all bg-white rounded-xl shadow-purple-200 border font-bold text-blue-700 hover:text-blue-800 mx-auto text-center block w-max">Projects</Link>
             </div>
         </div>
     )

@@ -5,39 +5,72 @@ const WorkExperience = () => {
     const data = [
         {
             id: 0,
-            title: "Technology Analyst",
-            duration: "July 2021 - Present",
-            org: "Infosys Ltd.",
-            skills: ["React.js", "Redux.js", "Node.js", "Express.js", "JavaScript", "TypeScript", "Serverless Function", "Microsoft Azure", "MongoDB", ],
+            title: "Software Engineer",
+            duration: "Nov 2024 - Present",
+            org: "Metacube Software Pvt Ltd.",
+            skills: ["React.js", "JavaScript", "Responsive Design", "OAuth", "QR Code Integration", "Agile"],
             desc: [
                 {
-                    "topic": "WorkplacePartnerProfileUpdateAzfn",
-                    "description": "Engineered an Azure function automating Starbucks' employee Workplace profile updates, integrating Service Bus for optimized operational workflows."
+                    "topic": "Project Setup & Architecture",
+                    "description": "Contributed to initial project setup, including codebase structuring and brainstorming on suitable technologies, libraries, and configurations for optimal performance."
                 },
                 {
-                    "topic": "PBPlays",
-                    "description": "Developed a web application that significantly accelerated application ticket resolution for the client’s team, reducing analysis time by 80%."
+                    "topic": "Authentication UI Development",
+                    "description": "Currently building an authentication UI for the client’s platform using React.js, focusing on responsive design and seamless user experience."
                 },
                 {
-                    "topic" : "Starbucks Reserve ESB",
-                    "description": "Developed a responsive web component for the Starbucks' Reserve platform, utilizing React.js and RESTful APIs to dynamically render content showcasing the Empire State Building Roastery, while ensuring cross-browser compatibility and optimizing load times for an enhanced user experience."
+                    "topic": "OAuth & QR Integration",
+                    "description": "Implementing key authentication features including QR code scanning and third-party OAuth integration to enhance security and user convenience."
                 },
                 {
-                    "topic": "Application Maintenance",
-                    "description": "Ensured seamless operation and maintained high availability of client applications across all locations in North America, proactively identifying and resolving issues."
+                    "topic": "Cross-functional Collaboration",
+                    "description": "Collaborating with backend engineers and the client team throughout the development lifecycle to ensure smooth integration and alignment with business goals."
                 },
                 {
-                    "topic": "Performance Optimization",
-                    "description": "Optimized Azure Functions by implementing performance enhancements and exception handling mechanisms, resulting in improved execution speed and reduced failures."
-                },
-                {
-                    "topic": "Library Upgrades and Bug Fixes",
-                    "description": "Worked on upgrading client's internal npm libraries and continuously addressed application bugs, improving overall system stability and performance."
+                    "topic": "Agile Delivery",
+                    "description": "Participating in regular code reviews and stand-ups, contributing to continuous improvement and timely delivery of project milestones."
                 }
             ]
         },
         {
             id: 1,
+            title: "Technology Analyst",
+            duration: "July 2021 - Oct 2024",
+            org: "Infosys Ltd.",
+            skills: ["React.js", "Redux.js", "Node.js", "Express.js", "JavaScript", "TypeScript", "Serverless Function", "Microsoft Azure", "NewRelic"],
+            desc: [
+                {
+                    "topic": "Web Component Development",
+                    "description": "Developed a responsive web component for the client's platform using React.js and RESTful APIs, dynamically rendering content while ensuring cross-browser compatibility and optimizing load times for enhanced user experience."
+                },
+                {
+                    "topic": "Serverless Automation",
+                    "description": "Engineered an Azure function to automate client employee Workplace profile updates, integrating Service Bus for optimized operational workflows, resulting in a 90% reduction in manual interventions and improved efficiency."
+                },
+                {
+                    "topic": "Internal Tooling",
+                    "description": "Created a web application that significantly reduced ticket resolution time, decreasing analysis time by 70% and increasing overall support team efficiency by 40%, leading to improved customer satisfaction."
+                },
+                {
+                    "topic": "Performance Tuning",
+                    "description": "Optimized Serverless Functions through code refactoring and performance tuning, resulting in a 25% improvement in execution speed and a 60% reduction in failure rates, enhancing overall system reliability."
+                },
+                {
+                    "topic": "Maintenance & Bug Fixes",
+                    "description": "Upgraded client's internal npm libraries and resolved critical application bugs, enhancing system stability by 75% and reducing downtime, leading to improved productivity across the organization."
+                },
+                {
+                    "topic": "Application Availability",
+                    "description": "Ensured seamless operation and maintained high availability of client applications across multiple locations in North America, proactively identifying and resolving issues to minimize service disruptions."
+                },
+                {
+                    "topic": "Performance Monitoring",
+                    "description": "Created multiple Key Performance Metric (KPM) dashboards using Azure and NewRelic, providing real-time insights into system performance and enabling data-driven decision-making for continuous improvement."
+                }
+            ]
+        },
+        {
+            id: 2,
             title: "Systems Engineer Trainee",
             duration: "Feb 2021 - Jun 2021",
             org: "Infosys Ltd.",
@@ -45,7 +78,7 @@ const WorkExperience = () => {
             desc: [
                 {
                     "topic": "Agile DevOps Monitoring",
-                    "description": "Developed a web application for tracking task progress in Agile projects, enabling task creation, progress updates, and tracking through dashboards"
+                    "description": "Developed a web application for tracking task progress in Agile projects, enabling task creation, progress updates, and tracking through dashboards."
                 },
                 {
                     "topic": "Database Architecture",

@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./src/App.js";
-import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useLocation } from "react-router";
 const WorkExperience = lazy(()=>import("./src/components/WorkExperience.js"));
 const Home = lazy(()=>import("./src/components/Home.js"));
 const About = lazy(()=> import("./src/components/About.js"));
