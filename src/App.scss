@@ -1,0 +1,52 @@
+@use "./styles/variables.scss" as *;
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: $screen-desktop-lg;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  background-color: $surface-color;
+  border: 1px solid $border-color;
+  border-radius: 1.5rem;
+  position: relative;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.page-content {
+  margin-top: 1rem;
+}
+
+// --- Media Queries ---
+@media (max-width: $screen-desktop) {
+  .app-container {
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 6rem; // Space for bottom navbar
+    gap: 1rem;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: $screen-mobile-max) {
+  .app-container {
+    padding-bottom: 5rem;
+  }
+  
+  .main-content {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}

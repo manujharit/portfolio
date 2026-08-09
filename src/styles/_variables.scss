@@ -1,0 +1,22 @@
+$bg-color: #0f0f10;
+$surface-color: #1e1e1f;
+$border-color: #383838;
+$text-main: #fafafa;
+$text-muted: #d6d6d6;
+$text-light: #a3a3a3;
+$accent-color: #ffdb70;
+
+$primary-gradient-start: #ffdb70;
+$primary-gradient-end: #ffb703;
+
+$screen-mobile: 480px;
+$screen-mobile-max: 767px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-lg: 1250px;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,219 @@
+@use "../styles/variables.scss" as *;
+
+.sidebar {
+  background-color: $surface-color;
+  border: 1px solid $border-color;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  width: 280px;
+  position: sticky;
+  top: 4rem;
+  height: fit-content;
+  z-index: 10;
+  transition: all 0.3s ease;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__avatar-box {
+    background-color: #2b2b2c;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    color: $text-main;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    color: $text-light;
+    background-color: #2b2b2c;
+    font-size: 0.875rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+  }
+
+  &__toggle {
+    display: none; // Hidden on desktop
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: $border-color;
+    margin: 2rem 0;
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__icon-box {
+    background-color: #2b2b2c;
+    color: $accent-color;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  &__contact-info {
+    text-align: left;
+  }
+
+  &__contact-title {
+    color: $text-light;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  &__contact-link {
+    color: $text-main;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  &__social-item {
+    a {
+      color: $text-light;
+      font-size: 1.25rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+// --- Media Queries ---
+@media (max-width: $screen-desktop) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding: 1.5rem;
+
+    &__info {
+      flex-direction: row;
+      justify-content: flex-start;
+      text-align: left;
+      gap: 1.5rem;
+    }
+
+    &__avatar-box {
+      margin-bottom: 0;
+      padding: 0;
+      background: none;
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 1rem;
+      }
+    }
+
+    &__toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      color: $accent-color;
+      font-size: 0.875rem;
+      font-weight: 500;
+      background: #2b2b2c;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      
+      &-icon {
+        transition: transform 0.3s ease;
+        &.rotated {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__contacts-wrapper {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &--expanded {
+      .sidebar__contacts-wrapper {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-mobile-max) {
+  .sidebar {
+    &__toggle {
+      top: 0;
+      right: 0;
+      background: transparent;
+      padding: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+
+      span {
+        display: none; // Hide text on small screens, only show chevron
+      }
+      
+      &-icon {
+        font-size: 1.5rem;
+      }
+    }
+    
+    &__info-content {
+      max-width: 65%;
+    }
+  }
+}

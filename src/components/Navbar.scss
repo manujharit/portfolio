@@ -1,0 +1,57 @@
+@use "../styles/variables.scss" as *;
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(#2b2b2c, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 1.25rem 3rem;
+  z-index: 10;
+
+  &__list {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  &__item {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  &__link {
+    color: $text-light;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &.active {
+      color: $accent-color;
+    }
+  }
+}
+
+// --- Media Queries ---
+@media (max-width: $screen-desktop) {
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+    border: 1px solid $border-color;
+    border-bottom: none;
+    padding: 1.25rem 2rem;
+    
+    &__list {
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+}
