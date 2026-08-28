@@ -19,10 +19,10 @@ const About = () => {
 
       <section className="about-text">
         <p>
-          As a developer with a keen eye for design and a love for coding, I specialize in building cutting-edge web applications that prioritize reactivity and user-friendliness. Leveraging the latest technologies, my goal is to create an optimal user interface that strikes a delicate balance between aesthetics and functionality. I firmly believe that a truly exceptional UI architecture seamlessly integrates the objectives and requirements of the end-users, resulting in an elegant, efficient, and robust design that enhances the overall user experience.
+          As a developer with a keen eye for design and a love for coding, I specialize in building cutting-edge web applications that prioritize reactivity and user-friendliness. Leveraging the latest technologies and AI-assisted development workflows, my goal is to create an optimal user interface that strikes a delicate balance between aesthetics and functionality. I firmly believe that a truly exceptional UI architecture seamlessly integrates the objectives and requirements of the end-users, resulting in an elegant, efficient, and robust design that enhances the overall user experience.
         </p>
         <p>
-          Full-Stack Engineer with {expYears} years and {expMonths} months of experience in developing modern, reactive, and user-friendly web applications using the latest technologies. Specializing in creating a perfect blend of UI architecture that accounts for goals, needs, and design constraints. Proficient in React.js, Redux.js, JavaScript, TypeScript, Node.js and Tailwind CSS. Experienced in building scalable web applications, Serverless computing with Azure, and responsive user interfaces.
+          Full-Stack Engineer with {expYears} years and {expMonths} months of experience in developing modern, reactive, and user-friendly web applications using the latest technologies. Specializing in creating a perfect blend of UI architecture that accounts for goals, needs, and design constraints. Proficient in React.js, Redux.js, JavaScript, TypeScript, Node.js, Tailwind CSS, and AI-assisted development. Experienced in building scalable web applications, Serverless computing with Azure, and responsive user interfaces.
         </p>
       </section>
 
@@ -30,7 +30,7 @@ const About = () => {
         <h3 className="section-title">Highlights & Successes</h3>
         <ul className="stats-list">
           <li className="stats-item">
-            <h4 className="stats-value">+{expYears}</h4>
+            <h4 className="stats-value">{expYears}+</h4>
             <p className="stats-text">YEARS OF EXPERIENCE</p>
           </li>
           <li className="stats-item">
@@ -47,7 +47,7 @@ const About = () => {
       <section className="about-skills">
         <h3 className="section-title">Skills</h3>
         <ul className="skills-badge-list">
-          {['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React.js', 'Node.js', 'Redux', 'Express.js', 'Serverless Functions', 'Microsoft Azure', 'Tailwind CSS'].map(skill => (
+          {['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Node.js', 'Redux', 'Express.js', 'Serverless Functions', 'Microsoft Azure', 'Tailwind CSS', 'Framer Motion', 'UI/UX Design', 'Figma', 'Responsive Design', 'AI Assisted Development', 'Generative AI', 'Prompt Engineering'].map(skill => (
             <li key={skill} className="skills-badge">{skill}</li>
           ))}
         </ul>

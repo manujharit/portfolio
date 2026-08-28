@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import ChatBot from "./components/ChatBot";
 import { Outlet, useLocation } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.scss";
@@ -25,6 +26,7 @@ const App = () => {
           </motion.div>
         </AnimatePresence>
       </div>
+      <ChatBot />
     </div>
   );
 };

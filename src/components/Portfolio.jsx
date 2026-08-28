@@ -16,6 +16,13 @@ const Portfolio = () => {
       category: "Frontend Development (React, Redux, TS)",
       image: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=600&auto=format&fit=crop", 
       link: "https://www.starbucksreserve.com/locations/empire-state-building"
+    },
+    {
+      id: 3,
+      title: "Developer Portfolio",
+      category: "Frontend Development (React, SCSS)",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop",
+      link: "https://manujharitwal.vercel.app/"
     }
   ];
 

@@ -103,6 +103,33 @@ const Resume = () => {
                 <div className="skill-progress-fill" style={{ width: "80%" }}></div>
               </div>
             </li>
+            <li className="skills-item">
+              <div className="skill-title-wrapper">
+                <h5 className="skill-title">AI Assisted Development</h5>
+                <span className="skill-percent">85%</span>
+              </div>
+              <div className="skill-progress-bg">
+                <div className="skill-progress-fill" style={{ width: "85%" }}></div>
+              </div>
+            </li>
+            <li className="skills-item">
+              <div className="skill-title-wrapper">
+                <h5 className="skill-title">UI/UX Design & Prototyping</h5>
+                <span className="skill-percent">80%</span>
+              </div>
+              <div className="skill-progress-bg">
+                <div className="skill-progress-fill" style={{ width: "80%" }}></div>
+              </div>
+            </li>
+            <li className="skills-item">
+              <div className="skill-title-wrapper">
+                <h5 className="skill-title">Next.js / Frontend Architecture</h5>
+                <span className="skill-percent">85%</span>
+              </div>
+              <div className="skill-progress-bg">
+                <div className="skill-progress-fill" style={{ width: "85%" }}></div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>

@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   server: {
-    port: 4000,
+    port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
+    strictPort: true,
   }
 })

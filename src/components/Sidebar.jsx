@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { GMAIL, LINKEDIN, TWITTER } from "../configs/configs";
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { GMAIL, LINKEDIN } from "../configs/configs";
+import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdOutlineExpandMore } from "react-icons/md";
 import ManujPhoto from "../assets/ManujPhoto.png";
 import "./Sidebar.scss";
@@ -49,7 +49,7 @@ const Sidebar = () => {
             </div>
             <div className="sidebar__contact-info">
               <p className="sidebar__contact-title">Location</p>
-              <address className="sidebar__contact-link">India</address>
+              <address className="sidebar__contact-link">Jaipur, Rajasthan, India</address>
             </div>
           </li>
         </ul>
@@ -67,12 +67,15 @@ const Sidebar = () => {
               <FaGithub />
             </a>
           </li>
-          <li className="sidebar__social-item">
-            <a href={TWITTER} target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-          </li>
         </ul>
+        
+        <div className="sidebar__separator"></div>
+
+        <div className="sidebar__action">
+          <a href="https://docs.google.com/document/d/1kIHDA1Vhzcom8FmGn39DAANmgVqA50Kg8QsMAz8GNDE/export?format=pdf" target="_blank" rel="noopener noreferrer" className="sidebar__download-btn" download>
+            Download CV
+          </a>
+        </div>
       </div>
     </aside>
   );
