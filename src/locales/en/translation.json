@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "about": "About",
+    "resume": "Resume",
+    "portfolio": "Portfolio"
+  },
+  "sidebar": {
+    "softwareEngineer": "Software Engineer",
+    "showContacts": "Show Contacts",
+    "email": "Email",
+    "location": "Location",
+    "downloadCv": "Download CV"
+  },
+  "about": {
+    "aboutMe": "About Me",
+    "aboutMeText1": "As a developer with a keen eye for design and a love for coding, I specialize in building cutting-edge web applications that prioritize reactivity and user-friendliness. Leveraging the latest technologies and AI-assisted development workflows, my goal is to create an optimal user interface that strikes a delicate balance between aesthetics and functionality. I firmly believe that a truly exceptional UI architecture seamlessly integrates the objectives and requirements of the end-users, resulting in an elegant, efficient, and robust design that enhances the overall user experience.",
+    "aboutMeText2": "Full-Stack Engineer with {{expYears}} years and {{expMonths}} months of experience in developing modern, reactive, and user-friendly web applications using the latest technologies. Specializing in creating a perfect blend of UI architecture that accounts for goals, needs, and design constraints. Proficient in React.js, Redux.js, JavaScript, TypeScript, Node.js, Tailwind CSS, and AI-assisted development. Experienced in building scalable web applications, Serverless computing with Azure, and responsive user interfaces.",
+    "highlights": "Highlights & Successes",
+    "yearsExperience": "YEARS OF EXPERIENCE",
+    "awards": "AWARDS & RECOGNITION",
+    "testCoverage": "TEST COVERAGE",
+    "skills": "Skills",
+    "techStack": "Architecture & Tech Stack Choices",
+    "techStackSubtitle": "A look into how I choose the right tool for the job.",
+    "primaryUseCase": "Primary Use Case:",
+    "tradeoffs": "Trade-offs:",
+    "reactReduxUseCase": "Complex, state-heavy enterprise applications requiring strict data flow.",
+    "reactReduxTradeoffs": "Excellent ecosystem and debugging tools, but introduces boilerplate. For simpler apps or static content, I prefer Next.js or raw React Context API to avoid over-engineering.",
+    "nodeExpressUseCase": "Fast, scalable microservices and APIs with high I/O operations.",
+    "nodeExpressTradeoffs": "Great for real-time apps (WebSockets) due to the event loop. However, for heavily CPU-bound tasks (like image processing), I'd advocate for Go or delegating to serverless functions.",
+    "azureUseCase": "Event-driven architecture and scaling specific endpoints without managing infrastructure.",
+    "azureTradeoffs": "Highly cost-effective and infinitely scalable. The downside is potential cold starts and vendor lock-in. Mitigation strategies involve keeping functions warm and decoupling core logic.",
+    "tailwindUseCase": "Rapid prototyping and maintaining design systems across large teams.",
+    "tailwindTradeoffs": "Tailwind speeds up development and prevents dead CSS. However, for highly custom, math-heavy animations or complex component libraries (like this portfolio), I still leverage the power of SCSS (BEM)."
+  },
+  "resume": {
+    "resume": "Resume",
+    "experience": "Experience",
+    "education": "Education",
+    "mySkills": "My Skills",
+    "experiences": [
+      {
+        "title": "Software Engineer",
+        "period": "Metacube Softwares Pvt Ltd. | Nov 2024 — Present",
+        "desc": [
+          "Led a team of 3 developers to deliver the Reports Module for a client application, setting up a smooth JIRA ticketing process and guiding the team through complex project data.",
+          "Worked on the Reports and Data Journey Module to help users to validate reports of user syncing from different sources and targets like O365, Google, Active Directory, etc.",
+          "Built a flexible authentication UI using React.js and reusable components and added secure login features using QR codes and OAuth.",
+          "Created responsive React applications that support multiple languages (i10n), accessibility standards (a11y), and work well across Chrome, Safari, and Firefox.",
+          "Improved application speed and reduced bundle sizes using Vite, Babel, and tree-shaking.",
+          "Reached 99% test coverage by writing detailed unit and integration tests with Jest and Playwright.",
+          "Kept the code clean and followed standard guidelines using ESLint, Stylelint, and Sonarqube."
+        ]
+      },
+      {
+        "title": "Technology Analyst",
+        "period": "Infosys Pvt. Ltd. | July 2021 — Oct 2024",
+        "desc": [
+          "Built React components and connected them to REST APIs, which made the UI faster and more responsive.",
+          "Created a web app that cut down ticket analysis time by 70% and boosted the team's efficiency by 40%.",
+          "Optimized the initial load time of the application using code-splitting and lazy loading.",
+          "Wrote unit and integration tests with Jest and React Testing Library to keep the application bug-free.",
+          "Set up real-time performance tracking dashboards using Microsoft Azure and New Relic.",
+          "Worked closely with UX designers to build pixel-perfect interfaces that look great on all browsers."
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "caseStudies": "Case Studies",
+    "caseStudiesSubtitle": "A deep dive into the architecture and business impact of my core projects.",
+    "liveDemo": "Live Demo",
+    "theProblem": "The Problem",
+    "architecture": "Architecture & Trade-offs",
+    "businessImpact": "Business Impact",
+    "studies": [
+      {
+        "title": "Food Delivery App",
+        "role": "Full Stack Engineer",
+        "problem": "I thought initially to build a basic application with mock data but then I thought of building a more complex and advanced application that uses user's location to fetch their nearby stores to show them restaurant they are familiar with, so I built this app with real time restaurant data. I explored and found that I can use Swiggy's API where I can get all the data I need. It was a great learning experience for me and I learned a lot about full stack development.",
+        "architecture": "I build 2 microservices, one for the frontend and one for the backend that filters me the data I require from API and also acts as a proxy server to avoid CORS issues.",
+        "impact": "I learned a lot about Data, APIs, cookie management, and frontend and backend development."
+      },
+      {
+        "title": "Roastery Platform (Infosys Client)",
+        "role": "Frontend Developer",
+        "problem": "A high-profile enterprise client needed a highly interactive, accessible, and performant web experience for their flagship location.",
+        "architecture": "Implemented TypeScript for type safety across team. Utilized custom React Hooks for complex filtering logic. Redesigned the themeing of the project and constantly was in touch with UX team related to designs and updates.",
+        "impact": "Increased user engagement duration for client's new roastery at Empire State Building. I got Client Recognition for the same."
+      },
+      {
+        "title": "Developer Portfolio",
+        "role": "Sole Developer",
+        "problem": "Needed a digital footprint that accurately reflected my mid-senior level engineering skills, moving beyond basic templates to showcase architecture and design.",
+        "architecture": "React-based SPA with Framer Motion for page transitions. Implemented an AI-powered ChatBot using advanced prompt engineering to simulate interactive conversations. Styled entirely with custom SCSS using scalable BEM methodology.",
+        "impact": "Creates a memorable, interactive experience for recruiters and engineering managers, resulting in increased interview conversion rates."
+      }
+    ]
+  },
+  "chatbot": {
+    "hiAssistant": "Hi! I'm Manuj's AI assistant. How can I help you today?",
+    "aiAssistant": "AI Assistant",
+    "loadingModels": "Loading models...",
+    "noModels": "No models found",
+    "chatPlaceholder": "Ask me about Manuj's resume...",
+    "chatPlaceholderNoModels": "Connect Ollama to chat..."
+  }
+}

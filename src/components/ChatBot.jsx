@@ -2,12 +2,14 @@ import { useState, useRef, useEffect } from 'react';
 import { FaRobot, FaTimes, FaPaperPlane } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { useTranslation } from "react-i18next";
 import './ChatBot.scss';
 
 const ChatBot = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: 'model', text: "Hi! I'm Manuj's AI assistant. How can I help you today?" }
+    { role: 'model', text: t("chatbot.hiAssistant") }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -118,7 +120,7 @@ const ChatBot = () => {
           <div className="chatbot-header">
             <div className="chatbot-header-title">
               <FaRobot />
-              <span>AI Assistant</span>
+              <span>{t("chatbot.aiAssistant")}</span>
             </div>
             
             <div className="chatbot-header-controls">
@@ -135,7 +137,7 @@ const ChatBot = () => {
                   ))}
                 </select>
               ) : (
-                <span className="model-fallback">{isFetchingModels ? 'Loading models...' : 'No models found'}</span>
+                <span className="model-fallback">{isFetchingModels ? t("chatbot.loadingModels") : t("chatbot.noModels")}</span>
               )}
               
               <button className="chatbot-close-btn" onClick={() => setIsOpen(false)} aria-label="Close Assistant">
@@ -178,7 +180,7 @@ const ChatBot = () => {
           <div className="chatbot-input-area">
             <input
               type="text"
-              placeholder={availableModels.length === 0 ? "Connect Ollama to chat..." : "Ask me about Manuj's resume..."}
+              placeholder={availableModels.length === 0 ? t("chatbot.chatPlaceholderNoModels") : t("chatbot.chatPlaceholder")}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyPress}

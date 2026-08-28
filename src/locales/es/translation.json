@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "resume": "Currículum",
+    "portfolio": "Portafolio"
+  },
+  "sidebar": {
+    "softwareEngineer": "Ingeniero de Software",
+    "showContacts": "Mostrar Contactos",
+    "email": "Correo",
+    "location": "Ubicación",
+    "downloadCv": "Descargar CV"
+  },
+  "about": {
+    "aboutMe": "Sobre Mí",
+    "aboutMeText1": "Como desarrollador con buen ojo para el diseño y pasión por la programación, me especializo en crear aplicaciones web de vanguardia que priorizan la reactividad y la facilidad de uso. Aprovechando las últimas tecnologías y flujos de trabajo asistidos por IA, mi objetivo es crear una interfaz de usuario óptima que logre un delicado equilibrio entre estética y funcionalidad. Creo firmemente que una arquitectura de interfaz de usuario verdaderamente excepcional integra perfectamente los objetivos y requisitos de los usuarios finales, dando como resultado un diseño elegante, eficiente y robusto que mejora la experiencia general del usuario.",
+    "aboutMeText2": "Ingeniero Full-Stack con {{expYears}} años y {{expMonths}} meses de experiencia en el desarrollo de aplicaciones web modernas, reactivas y fáciles de usar utilizando las últimas tecnologías. Especializado en crear una combinación perfecta de arquitectura de interfaz de usuario que tenga en cuenta los objetivos, necesidades y limitaciones de diseño. Competente en React.js, Redux.js, JavaScript, TypeScript, Node.js, Tailwind CSS y desarrollo asistido por IA. Con experiencia en la creación de aplicaciones web escalables, computación sin servidor con Azure e interfaces de usuario responsivas.",
+    "highlights": "Aspectos Destacados y Éxitos",
+    "yearsExperience": "AÑOS DE EXPERIENCIA",
+    "awards": "PREMIOS Y RECONOCIMIENTOS",
+    "testCoverage": "COBERTURA DE PRUEBAS",
+    "skills": "Habilidades",
+    "techStack": "Arquitectura y Elección de Tecnologías",
+    "techStackSubtitle": "Una mirada a cómo elijo la herramienta adecuada para el trabajo.",
+    "primaryUseCase": "Caso de Uso Principal:",
+    "tradeoffs": "Compensaciones:",
+    "reactReduxUseCase": "Aplicaciones empresariales complejas con mucho estado que requieren un flujo de datos estricto.",
+    "reactReduxTradeoffs": "Excelente ecosistema y herramientas de depuración, pero introduce código repetitivo (boilerplate). Para aplicaciones más simples, prefiero Next.js o Context API de React para evitar la sobreingeniería.",
+    "nodeExpressUseCase": "Microservicios y API rápidos y escalables con altas operaciones de E/S.",
+    "nodeExpressTradeoffs": "Excelente para aplicaciones en tiempo real (WebSockets) debido al bucle de eventos. Sin embargo, para tareas que exigen mucha CPU (como el procesamiento de imágenes), recomendaría Go o delegar a funciones sin servidor.",
+    "azureUseCase": "Arquitectura orientada a eventos y escalado de endpoints específicos sin administrar infraestructura.",
+    "azureTradeoffs": "Altamente rentable e infinitamente escalable. La desventaja son los posibles arranques en frío (cold starts) y la dependencia del proveedor. Las estrategias de mitigación incluyen mantener las funciones calientes y desacoplar la lógica central.",
+    "tailwindUseCase": "Prototipado rápido y mantenimiento de sistemas de diseño en equipos grandes.",
+    "tailwindTradeoffs": "Tailwind acelera el desarrollo y evita CSS muerto. Sin embargo, para animaciones muy personalizadas con muchos cálculos o bibliotecas de componentes complejas (como este portafolio), todavía aprovecho el poder de SCSS (BEM)."
+  },
+  "resume": {
+    "resume": "Currículum",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "mySkills": "Mis Habilidades",
+    "experiences": [
+      {
+        "title": "Ingeniero de Software",
+        "period": "Metacube Softwares Pvt Ltd. | Nov 2024 — Presente",
+        "desc": [
+          "Lideré un equipo de 3 desarrolladores para entregar el Módulo de Informes para una aplicación de cliente, configurando un proceso fluido de tickets en JIRA y guiando al equipo a través de datos de proyectos complejos.",
+          "Trabajé en el Módulo de Informes y Viaje de Datos para ayudar a los usuarios a validar informes de sincronización de usuarios desde diferentes fuentes y destinos como O365, Google, Active Directory, etc.",
+          "Construí una interfaz de usuario de autenticación flexible usando React.js y componentes reutilizables y agregué funciones de inicio de sesión seguro usando códigos QR y OAuth.",
+          "Creé aplicaciones React responsivas que soportan múltiples idiomas (i18n), estándares de accesibilidad (a11y) y funcionan bien en Chrome, Safari y Firefox.",
+          "Mejoré la velocidad de la aplicación y reduje los tamaños de los paquetes usando Vite, Babel y tree-shaking.",
+          "Alcancé una cobertura de pruebas del 99% escribiendo pruebas unitarias y de integración detalladas con Jest y Playwright.",
+          "Mantuve el código limpio y seguí pautas estándar usando ESLint, Stylelint y Sonarqube."
+        ]
+      },
+      {
+        "title": "Analista de Tecnología",
+        "period": "Infosys Pvt. Ltd. | Julio 2021 — Oct 2024",
+        "desc": [
+          "Construí componentes de React y los conecté a APIs REST, lo que hizo que la interfaz de usuario fuera más rápida y responsiva.",
+          "Creé una aplicación web que redujo el tiempo de análisis de tickets en un 70% e impulsó la eficiencia del equipo en un 40%.",
+          "Optimicé el tiempo de carga inicial de la aplicación utilizando la división de código (code-splitting) y la carga diferida (lazy loading).",
+          "Escribí pruebas unitarias y de integración con Jest y React Testing Library para mantener la aplicación libre de errores.",
+          "Configuré paneles de seguimiento de rendimiento en tiempo real utilizando Microsoft Azure y New Relic.",
+          "Trabajé de cerca con diseñadores UX para construir interfaces con píxeles perfectos que se ven geniales en todos los navegadores."
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "caseStudies": "Casos de Estudio",
+    "caseStudiesSubtitle": "Una inmersión profunda en la arquitectura y el impacto comercial de mis proyectos principales.",
+    "liveDemo": "Demostración",
+    "theProblem": "El Problema",
+    "architecture": "Arquitectura y Compensaciones",
+    "businessImpact": "Impacto Comercial",
+    "studies": [
+      {
+        "title": "Aplicación de Entrega de Comida",
+        "role": "Ingeniero Full Stack",
+        "problem": "Inicialmente pensé en construir una aplicación básica con datos simulados, pero luego pensé en construir una aplicación más compleja y avanzada que use la ubicación del usuario para buscar tiendas cercanas y mostrar restaurantes con los que están familiarizados, así que construí esta aplicación con datos de restaurantes en tiempo real. Exploré y descubrí que puedo usar la API de Swiggy donde puedo obtener todos los datos que necesito. Fue una gran experiencia de aprendizaje para mí y aprendí mucho sobre el desarrollo full stack.",
+        "architecture": "Construí 2 microservicios, uno para el frontend y otro para el backend que filtra los datos que requiero de la API y también actúa como un servidor proxy para evitar problemas de CORS.",
+        "impact": "Aprendí mucho sobre Datos, APIs, gestión de cookies y desarrollo frontend y backend."
+      },
+      {
+        "title": "Plataforma Roastery (Cliente de Infosys)",
+        "role": "Desarrollador Frontend",
+        "problem": "Un cliente empresarial de alto perfil necesitaba una experiencia web altamente interactiva, accesible y de alto rendimiento para su ubicación emblemática.",
+        "architecture": "Implementé TypeScript para la seguridad de tipos en todo el equipo. Utilicé React Hooks personalizados para lógica de filtrado compleja. Rediseñé la tematización del proyecto y estuve en contacto constante con el equipo de UX con respecto a diseños y actualizaciones.",
+        "impact": "Aumentó la duración de la participación del usuario en la nueva tostaduría del cliente en el Empire State Building. Obtuve Reconocimiento del Cliente por ello."
+      },
+      {
+        "title": "Portafolio de Desarrollador",
+        "role": "Desarrollador Único",
+        "problem": "Necesitaba una huella digital que reflejara con precisión mis habilidades de ingeniería de nivel medio-senior, yendo más allá de las plantillas básicas para mostrar la arquitectura y el diseño.",
+        "architecture": "SPA basada en React con Framer Motion para transiciones de página. Implementé un ChatBot impulsado por IA utilizando ingeniería de prompts avanzada para simular conversaciones interactivas. Diseñado completamente con SCSS personalizado utilizando la metodología BEM escalable.",
+        "impact": "Crea una experiencia interactiva y memorable para reclutadores y gerentes de ingeniería, lo que resulta en mayores tasas de conversión de entrevistas."
+      }
+    ]
+  },
+  "chatbot": {
+    "hiAssistant": "¡Hola! Soy el asistente de IA de Manuj. ¿Cómo puedo ayudarte hoy?",
+    "aiAssistant": "Asistente de IA",
+    "loadingModels": "Cargando modelos...",
+    "noModels": "No se encontraron modelos",
+    "chatPlaceholder": "Pregúntame sobre el currículum de Manuj...",
+    "chatPlaceholderNoModels": "Conecta Ollama para chatear..."
+  }
+}

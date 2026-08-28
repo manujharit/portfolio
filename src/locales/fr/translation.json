@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "about": "À propos",
+    "resume": "CV",
+    "portfolio": "Portfolio"
+  },
+  "sidebar": {
+    "softwareEngineer": "Ingénieur Logiciel",
+    "showContacts": "Afficher les contacts",
+    "email": "E-mail",
+    "location": "Localisation",
+    "downloadCv": "Télécharger le CV"
+  },
+  "about": {
+    "aboutMe": "À Propos de Moi",
+    "aboutMeText1": "En tant que développeur doté d'un sens aigu du design et d'une passion pour le code, je me spécialise dans la création d'applications web de pointe qui privilégient la réactivité et la convivialité. En tirant parti des dernières technologies et des flux de travail assistés par l'IA, mon objectif est de créer une interface utilisateur optimale qui trouve un équilibre délicat entre esthétique et fonctionnalité. Je crois fermement qu'une architecture d'interface utilisateur vraiment exceptionnelle intègre de manière transparente les objectifs et les exigences des utilisateurs finaux, ce qui se traduit par une conception élégante, efficace et robuste qui améliore l'expérience utilisateur globale.",
+    "aboutMeText2": "Ingénieur Full-Stack avec {{expYears}} ans et {{expMonths}} mois d'expérience dans le développement d'applications web modernes, réactives et conviviales utilisant les dernières technologies. Spécialisé dans la création d'un mélange parfait d'architecture d'interface utilisateur qui tient compte des objectifs, des besoins et des contraintes de conception. Compétent en React.js, Redux.js, JavaScript, TypeScript, Node.js, Tailwind CSS et développement assisté par l'IA. Expérimenté dans la création d'applications web évolutives, l'informatique sans serveur avec Azure et les interfaces utilisateur réactives.",
+    "highlights": "Faits Saillants et Succès",
+    "yearsExperience": "ANNÉES D'EXPÉRIENCE",
+    "awards": "PRIX & RECONNAISSANCES",
+    "testCoverage": "COUVERTURE DES TESTS",
+    "skills": "Compétences",
+    "techStack": "Architecture et Choix Technologiques",
+    "techStackSubtitle": "Un aperçu de la façon dont je choisis le bon outil pour le travail.",
+    "primaryUseCase": "Cas d'utilisation principal :",
+    "tradeoffs": "Compromis :",
+    "reactReduxUseCase": "Applications d'entreprise complexes et lourdes en état nécessitant un flux de données strict.",
+    "reactReduxTradeoffs": "Excellent écosystème et outils de débogage, mais introduit du code passe-partout. Pour les applications plus simples, je préfère Next.js ou l'API React Context pour éviter la sur-ingénierie.",
+    "nodeExpressUseCase": "Microservices et API rapides et évolutifs avec des opérations d'E/S élevées.",
+    "nodeExpressTradeoffs": "Idéal pour les applications en temps réel (WebSockets) grâce à la boucle d'événements. Cependant, pour les tâches très gourmandes en CPU (comme le traitement d'images), je recommanderais Go ou de déléguer à des fonctions sans serveur.",
+    "azureUseCase": "Architecture axée sur les événements et mise à l'échelle de points de terminaison spécifiques sans gérer l'infrastructure.",
+    "azureTradeoffs": "Très rentable et infiniment évolutif. L'inconvénient réside dans les démarrages à froid potentiels et la dépendance vis-à-vis du fournisseur. Les stratégies d'atténuation consistent à garder les fonctions actives et à découpler la logique de base.",
+    "tailwindUseCase": "Prototypage rapide et maintenance de systèmes de conception au sein de grandes équipes.",
+    "tailwindTradeoffs": "Tailwind accélère le développement et évite les CSS morts. Cependant, pour des animations très personnalisées, gourmandes en mathématiques ou des bibliothèques de composants complexes (comme ce portfolio), j'exploite toujours la puissance de SCSS (BEM)."
+  },
+  "resume": {
+    "resume": "CV",
+    "experience": "Expérience",
+    "education": "Éducation",
+    "mySkills": "Mes Compétences",
+    "experiences": [
+      {
+        "title": "Ingénieur Logiciel",
+        "period": "Metacube Softwares Pvt Ltd. | Nov 2024 — Présent",
+        "desc": [
+          "Direction d'une équipe de 3 développeurs pour livrer le module de rapports pour une application client, mise en place d'un processus de billetterie JIRA fluide et guidage de l'équipe à travers des données de projet complexes.",
+          "Travail sur le module de rapports et de parcours de données pour aider les utilisateurs à valider les rapports de synchronisation des utilisateurs à partir de différentes sources et cibles telles que O365, Google, Active Directory, etc.",
+          "Création d'une interface utilisateur d'authentification flexible à l'aide de React.js et de composants réutilisables, et ajout de fonctionnalités de connexion sécurisée à l'aide de codes QR et d'OAuth.",
+          "Création d'applications React réactives qui prennent en charge plusieurs langues (i18n), les normes d'accessibilité (a11y) et fonctionnent bien sur Chrome, Safari et Firefox.",
+          "Amélioration de la vitesse de l'application et réduction de la taille des bundles grâce à Vite, Babel et le tree-shaking.",
+          "Atteinte d'une couverture de tests de 99% en écrivant des tests unitaires et d'intégration détaillés avec Jest et Playwright.",
+          "Maintien d'un code propre et respect des directives standard à l'aide d'ESLint, Stylelint et Sonarqube."
+        ]
+      },
+      {
+        "title": "Analyste Technologique",
+        "period": "Infosys Pvt. Ltd. | Juillet 2021 — Oct 2024",
+        "desc": [
+          "Création de composants React et connexion à des API REST, ce qui a rendu l'interface utilisateur plus rapide et plus réactive.",
+          "Création d'une application web qui a réduit le temps d'analyse des tickets de 70% et a augmenté l'efficacité de l'équipe de 40%.",
+          "Optimisation du temps de chargement initial de l'application à l'aide du fractionnement du code (code-splitting) et du chargement différé (lazy loading).",
+          "Écriture de tests unitaires et d'intégration avec Jest et React Testing Library pour garder l'application exempte de bogues.",
+          "Mise en place de tableaux de bord de suivi des performances en temps réel à l'aide de Microsoft Azure et de New Relic.",
+          "Étroite collaboration avec les concepteurs UX pour créer des interfaces au pixel près qui s'affichent parfaitement sur tous les navigateurs."
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "caseStudies": "Études de Cas",
+    "caseStudiesSubtitle": "Une plongée approfondie dans l'architecture et l'impact commercial de mes projets principaux.",
+    "liveDemo": "Démo en direct",
+    "theProblem": "Le Problème",
+    "architecture": "Architecture et Compromis",
+    "businessImpact": "Impact Commercial",
+    "studies": [
+      {
+        "title": "Application de Livraison de Nourriture",
+        "role": "Ingénieur Full Stack",
+        "problem": "Au départ, je pensais créer une application basique avec des données fictives, puis j'ai décidé de créer une application plus complexe et avancée qui utilise l'emplacement de l'utilisateur pour récupérer les magasins à proximité et leur montrer les restaurants qu'ils connaissent, j'ai donc construit cette application avec des données de restaurant en temps réel. J'ai exploré et trouvé que je pouvais utiliser l'API de Swiggy où je peux obtenir toutes les données dont j'ai besoin. Ce fut une excellente expérience d'apprentissage pour moi et j'ai beaucoup appris sur le développement full stack.",
+        "architecture": "J'ai construit 2 microservices, un pour le frontend et un pour le backend qui filtre les données dont j'ai besoin de l'API et agit également comme un serveur proxy pour éviter les problèmes CORS.",
+        "impact": "J'ai beaucoup appris sur les données, les API, la gestion des cookies et le développement frontend et backend."
+      },
+      {
+        "title": "Plateforme Roastery (Client Infosys)",
+        "role": "Développeur Frontend",
+        "problem": "Un client d'entreprise de premier plan avait besoin d'une expérience web hautement interactive, accessible et performante pour son emplacement phare.",
+        "architecture": "Implémentation de TypeScript pour la sécurité des types dans toute l'équipe. Utilisation de React Hooks personnalisés pour une logique de filtrage complexe. Refonte du thème du projet et contact constant avec l'équipe UX concernant les conceptions et les mises à jour.",
+        "impact": "Augmentation de la durée d'engagement des utilisateurs pour la nouvelle brûlerie du client à l'Empire State Building. J'ai obtenu la reconnaissance du client pour cela."
+      },
+      {
+        "title": "Portfolio de Développeur",
+        "role": "Développeur Unique",
+        "problem": "J'avais besoin d'une empreinte numérique qui reflétait fidèlement mes compétences en ingénierie de niveau intermédiaire à senior, allant au-delà des modèles de base pour présenter l'architecture et la conception.",
+        "architecture": "SPA basée sur React avec Framer Motion pour les transitions de page. Implémentation d'un ChatBot alimenté par l'IA utilisant une ingénierie de requêtes avancée pour simuler des conversations interactives. Conçu entièrement avec SCSS personnalisé en utilisant la méthodologie BEM évolutive.",
+        "impact": "Crée une expérience mémorable et interactive pour les recruteurs et les responsables de l'ingénierie, entraînant une augmentation des taux de conversion des entretiens."
+      }
+    ]
+  },
+  "chatbot": {
+    "hiAssistant": "Salut ! Je suis l'assistant IA de Manuj. Comment puis-je vous aider aujourd'hui ?",
+    "aiAssistant": "Assistant IA",
+    "loadingModels": "Chargement des modèles...",
+    "noModels": "Aucun modèle trouvé",
+    "chatPlaceholder": "Posez-moi des questions sur le CV de Manuj...",
+    "chatPlaceholderNoModels": "Connectez Ollama pour discuter..."
+  }
+}

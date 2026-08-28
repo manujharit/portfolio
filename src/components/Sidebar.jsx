@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { GMAIL, LINKEDIN } from "../configs/configs";
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdOutlineExpandMore } from "react-icons/md";
@@ -6,6 +7,7 @@ import ManujPhoto from "../assets/ManujPhoto.png";
 import "./Sidebar.scss";
 
 const Sidebar = () => {
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -17,14 +19,14 @@ const Sidebar = () => {
 
         <div className="sidebar__info-content">
           <h1 className="sidebar__name">Manuj Haritwal</h1>
-          <p className="sidebar__title">Software Engineer</p>
+          <p className="sidebar__title">{t("sidebar.softwareEngineer")}</p>
         </div>
 
         <button 
           className="sidebar__toggle" 
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          <span>Show Contacts</span>
+          <span>{t("sidebar.showContacts")}</span>
           <MdOutlineExpandMore className={`sidebar__toggle-icon ${isExpanded ? "rotated" : ""}`} />
         </button>
       </div>
@@ -38,7 +40,7 @@ const Sidebar = () => {
               <FaEnvelope />
             </div>
             <div className="sidebar__contact-info">
-              <p className="sidebar__contact-title">Email</p>
+              <p className="sidebar__contact-title">{t("sidebar.email")}</p>
               <a href={GMAIL} className="sidebar__contact-link">manuj.haritwal01@gmail.com</a>
             </div>
           </li>
@@ -48,7 +50,7 @@ const Sidebar = () => {
               <FaMapMarkerAlt />
             </div>
             <div className="sidebar__contact-info">
-              <p className="sidebar__contact-title">Location</p>
+              <p className="sidebar__contact-title">{t("sidebar.location")}</p>
               <address className="sidebar__contact-link">Jaipur, Rajasthan, India</address>
             </div>
           </li>
@@ -73,7 +75,7 @@ const Sidebar = () => {
 
         <div className="sidebar__action">
           <a href="https://docs.google.com/document/d/1kIHDA1Vhzcom8FmGn39DAANmgVqA50Kg8QsMAz8GNDE/export?format=pdf" target="_blank" rel="noopener noreferrer" className="sidebar__download-btn" download>
-            Download CV
+            {t("sidebar.downloadCv")}
           </a>
         </div>
       </div>

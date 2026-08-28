@@ -7,6 +7,7 @@ import About from "./components/About.jsx";
 import Resume from "./components/Resume.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import "../index.scss";
+import "./i18n";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
