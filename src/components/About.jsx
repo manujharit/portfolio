@@ -52,6 +52,45 @@ const About = () => {
           ))}
         </ul>
       </section>
+
+      <section className="tech-tradeoffs">
+        <h3 className="section-title">Architecture & Tech Stack Choices</h3>
+        <p className="section-subtitle">A look into how I choose the right tool for the job.</p>
+        
+        <div className="tradeoffs-grid">
+          <div className="tradeoff-card">
+            <h4 className="tradeoff-title">React & Redux</h4>
+            <div className="tradeoff-content">
+              <p><strong>Primary Use Case:</strong> Complex, state-heavy enterprise applications requiring strict data flow.</p>
+              <p><strong>Trade-offs:</strong> Excellent ecosystem and debugging tools, but introduces boilerplate. For simpler apps or static content, I prefer Next.js or raw React Context API to avoid over-engineering.</p>
+            </div>
+          </div>
+          
+          <div className="tradeoff-card">
+            <h4 className="tradeoff-title">Node.js & Express</h4>
+            <div className="tradeoff-content">
+              <p><strong>Primary Use Case:</strong> Fast, scalable microservices and APIs with high I/O operations.</p>
+              <p><strong>Trade-offs:</strong> Great for real-time apps (WebSockets) due to the event loop. However, for heavily CPU-bound tasks (like image processing), I'd advocate for Go or delegating to serverless functions.</p>
+            </div>
+          </div>
+
+          <div className="tradeoff-card">
+            <h4 className="tradeoff-title">Azure Serverless</h4>
+            <div className="tradeoff-content">
+              <p><strong>Primary Use Case:</strong> Event-driven architecture and scaling specific endpoints without managing infrastructure.</p>
+              <p><strong>Trade-offs:</strong> Highly cost-effective and infinitely scalable. The downside is potential cold starts and vendor lock-in. Mitigation strategies involve keeping functions warm and decoupling core logic.</p>
+            </div>
+          </div>
+
+          <div className="tradeoff-card">
+            <h4 className="tradeoff-title">Tailwind CSS vs SCSS</h4>
+            <div className="tradeoff-content">
+              <p><strong>Primary Use Case:</strong> Rapid prototyping and maintaining design systems across large teams.</p>
+              <p><strong>Trade-offs:</strong> Tailwind speeds up development and prevents dead CSS. However, for highly custom, math-heavy animations or complex component libraries (like this portfolio), I still leverage the power of SCSS (BEM).</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -1,8 +1,5 @@
 @use "../styles/variables.scss" as *;
 
-.about-page {
-}
-
 .page-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -101,3 +98,66 @@
   }
 }
 
+.tech-tradeoffs {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.section-subtitle {
+  color: $text-light;
+  font-size: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.tradeoffs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  
+  @media (min-width: $screen-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tradeoff-card {
+  background-color: #1a1a1b;
+  border: 1px solid #2b2b2c;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-color: $accent-color;
+  }
+}
+
+.tradeoff-title {
+  color: $accent-color;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tradeoff-content {
+  p {
+    color: $text-muted;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    color: $text-main;
+    font-weight: 600;
+  }
+}

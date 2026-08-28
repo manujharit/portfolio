@@ -1,12 +1,12 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./src/App.jsx";
+import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider, useLocation } from "react-router";
 
-import About from "./src/components/About.jsx";
-import Resume from "./src/components/Resume.jsx";
-import Portfolio from "./src/components/Portfolio.jsx";
-import "./index.scss";
+import About from "./components/About.jsx";
+import Resume from "./components/Resume.jsx";
+import Portfolio from "./components/Portfolio.jsx";
+import "../index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
