@@ -22,7 +22,7 @@
 }
 
 .icon-box {
-  background-color: #2b2b2c;
+  background-color: $surface-highlight;
   color: $accent-color;
   width: 3rem;
   height: 3rem;
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.375rem -1px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-list {
@@ -62,7 +62,7 @@
     height: 0.75rem;
     border-radius: 50%;
     background-color: $accent-color;
-    box-shadow: 0 0 0 4px #2b2b2c; // Creates space around the dot
+    box-shadow: 0 0 0 0.25rem $surface-highlight; // Creates space around the dot
   }
 
   &-title {
@@ -105,7 +105,7 @@
 }
 
 .skills-section {
-  background-color: #2b2b2c;
+  background-color: $surface-highlight;
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -144,14 +144,14 @@
 
 .skill-progress-bg {
   width: 100%;
-  height: 8px;
-  background-color: #1e1e1f;
-  border-radius: 4px;
+  height: 0.5rem;
+  background-color: $surface-color;
+  border-radius: 0.25rem;
   overflow: hidden;
 }
 
 .skill-progress-fill {
   height: 100%;
   background-color: $accent-color;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }

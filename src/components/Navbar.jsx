@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import ThemeToggle from "./ThemeToggle";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -15,6 +16,9 @@ const Navbar = () => {
           <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "navbar__link active" : "navbar__link")}>Portfolio</NavLink>
         </li>
       </ul>
+      <div className="navbar__actions">
+        <ThemeToggle />
+      </div>
     </nav>
   );
 };

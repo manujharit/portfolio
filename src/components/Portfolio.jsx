@@ -1,5 +1,11 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 import "./Portfolio.scss";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 const Portfolio = () => {
   const caseStudies = [
@@ -44,8 +50,16 @@ const Portfolio = () => {
       </header>
 
       <div className="case-studies-list">
-        {caseStudies.map((study) => (
-          <article className="case-study-card" key={study.id}>
+        {caseStudies.map((study, index) => (
+          <motion.article 
+            className="case-study-card" 
+            key={study.id}
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            custom={index}
+          >
             <div className="case-study-image-wrapper">
               <img src={study.image} alt={study.title} loading="lazy" />
               <div className="case-study-links-overlay">
@@ -76,7 +90,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </div>

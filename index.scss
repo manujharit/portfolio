@@ -30,3 +30,7 @@ button {
   font-family: inherit;
   color: inherit;
 }
+
+a, button, input, select, textarea, [tabindex="0"] {
+  @include focus-ring;
+}

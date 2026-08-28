@@ -1,5 +1,21 @@
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import { motion } from "framer-motion";
 import "./Resume.scss";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15
+    }
+  }
+};
 
 const Resume = () => {
   return (
@@ -9,7 +25,13 @@ const Resume = () => {
         <div className="page-title-underline"></div>
       </header>
 
-      <section className="timeline-section">
+      <motion.section 
+        className="timeline-section"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="title-wrapper">
           <div className="icon-box">
             <FaBriefcase />
@@ -17,8 +39,14 @@ const Resume = () => {
           <h3 className="section-title">Experience</h3>
         </div>
 
-        <ol className="timeline-list">
-          <li className="timeline-item">
+        <motion.ol 
+          className="timeline-list"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <motion.li className="timeline-item" variants={fadeInUp}>
             <h4 className="timeline-item-title">Software Engineer</h4>
             <span className="timeline-item-period">Metacube Softwares Pvt Ltd. | Nov 2024 — Present</span>
             <ul className="timeline-item-desc-list">
@@ -30,8 +58,8 @@ const Resume = () => {
               <li>Reached 99% test coverage by writing detailed unit and integration tests with Jest and Playwright.</li>
               <li>Kept the code clean and followed standard guidelines using ESLint, Stylelint, and Sonarqube.</li>
             </ul>
-          </li>
-          <li className="timeline-item">
+          </motion.li>
+          <motion.li className="timeline-item" variants={fadeInUp}>
             <h4 className="timeline-item-title">Technology Analyst</h4>
             <span className="timeline-item-period">Infosys Pvt. Ltd. | July 2021 — Oct 2024</span>
             <ul className="timeline-item-desc-list">
@@ -42,11 +70,17 @@ const Resume = () => {
               <li>Set up real-time performance tracking dashboards using Microsoft Azure and New Relic.</li>
               <li>Worked closely with UX designers to build pixel-perfect interfaces that look great on all browsers.</li>
             </ul>
-          </li>
-        </ol>
-      </section>
+          </motion.li>
+        </motion.ol>
+      </motion.section>
 
-      <section className="timeline-section">
+      <motion.section 
+        className="timeline-section"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="title-wrapper">
           <div className="icon-box">
             <FaGraduationCap />
@@ -54,20 +88,38 @@ const Resume = () => {
           <h3 className="section-title">Education</h3>
         </div>
 
-        <ol className="timeline-list">
-          <li className="timeline-item">
+        <motion.ol 
+          className="timeline-list"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <motion.li className="timeline-item" variants={fadeInUp}>
             <h4 className="timeline-item-title">B.Tech - Computer Science & Engineering</h4>
             <span className="timeline-item-period">Dehradun Institute of Technology | 2017 — 2021</span>
             <p className="timeline-item-desc">CGPA: 7.44</p>
-          </li>
-        </ol>
-      </section>
+          </motion.li>
+        </motion.ol>
+      </motion.section>
 
-      <section className="skills-section">
+      <motion.section 
+        className="skills-section"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <h3 className="section-title">My Skills</h3>
         <div className="skills-container">
-          <ul className="skills-list">
-            <li className="skills-item">
+          <motion.ul 
+            className="skills-list"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            <motion.li className="skills-item" variants={fadeInUp}>
               <div className="skill-title-wrapper">
                 <h5 className="skill-title">React.js</h5>
                 <span className="skill-percent">95%</span>
@@ -75,8 +127,8 @@ const Resume = () => {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: "95%" }}></div>
               </div>
-            </li>
-            <li className="skills-item">
+            </motion.li>
+            <motion.li className="skills-item" variants={fadeInUp}>
               <div className="skill-title-wrapper">
                 <h5 className="skill-title">Redux</h5>
                 <span className="skill-percent">90%</span>
@@ -84,8 +136,8 @@ const Resume = () => {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: "90%" }}></div>
               </div>
-            </li>
-            <li className="skills-item">
+            </motion.li>
+            <motion.li className="skills-item" variants={fadeInUp}>
               <div className="skill-title-wrapper">
                 <h5 className="skill-title">JavaScript (ES6+) / TypeScript</h5>
                 <span className="skill-percent">90%</span>
@@ -93,8 +145,8 @@ const Resume = () => {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: "90%" }}></div>
               </div>
-            </li>
-            <li className="skills-item">
+            </motion.li>
+            <motion.li className="skills-item" variants={fadeInUp}>
               <div className="skill-title-wrapper">
                 <h5 className="skill-title">Node.js / Express</h5>
                 <span className="skill-percent">80%</span>
@@ -102,8 +154,8 @@ const Resume = () => {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: "80%" }}></div>
               </div>
-            </li>
-            <li className="skills-item">
+            </motion.li>
+            <motion.li className="skills-item" variants={fadeInUp}>
               <div className="skill-title-wrapper">
                 <h5 className="skill-title">AI Assisted Development</h5>
                 <span className="skill-percent">85%</span>
@@ -111,8 +163,8 @@ const Resume = () => {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: "85%" }}></div>
               </div>
-            </li>
-            <li className="skills-item">
+            </motion.li>
+            <motion.li className="skills-item" variants={fadeInUp}>
               <div className="skill-title-wrapper">
                 <h5 className="skill-title">UI/UX Design & Prototyping</h5>
                 <span className="skill-percent">80%</span>
@@ -120,8 +172,8 @@ const Resume = () => {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: "80%" }}></div>
               </div>
-            </li>
-            <li className="skills-item">
+            </motion.li>
+            <motion.li className="skills-item" variants={fadeInUp}>
               <div className="skill-title-wrapper">
                 <h5 className="skill-title">Next.js / Frontend Architecture</h5>
                 <span className="skill-percent">85%</span>
@@ -129,10 +181,10 @@ const Resume = () => {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: "85%" }}></div>
               </div>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

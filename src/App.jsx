@@ -1,21 +1,28 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import React, { lazy } from 'react';
+import React, { lazy, useEffect } from 'react';
+import CustomCursor from './components/CustomCursor';
 const ChatBot = lazy(() => import('./components/ChatBot'));
 import { useOutlet, useLocation } from "react-router";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import "./App.scss";
 
 const App = () => {
   const location = useLocation();
   const currentOutlet = useOutlet();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
-    <div className="app-container">
-      <Sidebar />
-      <div className="main-content">
-        <Navbar />
-        <AnimatePresence mode="wait">
+    <MotionConfig reducedMotion="user">
+      <div className="app-container">
+        <CustomCursor />
+        <Sidebar />
+        <main className="main-content">
+          <Navbar />
+          <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
             initial={{ opacity: 0, y: 20 }}
@@ -27,11 +34,12 @@ const App = () => {
             {currentOutlet}
           </motion.div>
         </AnimatePresence>
+        </main>
+        <React.Suspense fallback={null}>
+          <ChatBot />
+        </React.Suspense>
       </div>
-      <React.Suspense fallback={null}>
-        <ChatBot />
-      </React.Suspense>
-    </div>
+    </MotionConfig>
   );
 };
 

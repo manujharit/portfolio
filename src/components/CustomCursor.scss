@@ -1,0 +1,10 @@
+@media (pointer: fine) {
+  // Keeping this block in case future desktop-only styles are needed
+}
+
+.custom-cursor {
+  /* Only display on devices with a fine pointer (mouse/trackpad) */
+  @media (pointer: coarse) {
+    display: none;
+  }
+}

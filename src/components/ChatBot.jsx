@@ -108,7 +108,7 @@ const ChatBot = () => {
   return (
     <div className={`chatbot-wrapper ${isOpen ? 'open' : ''}`}>
       {!isOpen && (
-        <button className="chatbot-toggle-btn" onClick={() => setIsOpen(true)}>
+        <button className="chatbot-toggle-btn" onClick={() => setIsOpen(true)} aria-label="Open AI Assistant">
           <FaRobot size={24} />
         </button>
       )}
@@ -128,6 +128,7 @@ const ChatBot = () => {
                   value={selectedModel} 
                   onChange={(e) => setSelectedModel(e.target.value)}
                   disabled={isLoading}
+                  aria-label="Select AI Model"
                 >
                   {availableModels.map(m => (
                     <option key={m} value={m}>{m}</option>
@@ -137,13 +138,13 @@ const ChatBot = () => {
                 <span className="model-fallback">{isFetchingModels ? 'Loading models...' : 'No models found'}</span>
               )}
               
-              <button className="chatbot-close-btn" onClick={() => setIsOpen(false)}>
+              <button className="chatbot-close-btn" onClick={() => setIsOpen(false)} aria-label="Close Assistant">
                 <FaTimes />
               </button>
             </div>
           </div>
 
-          <div className="chatbot-messages">
+          <div className="chatbot-messages" aria-live="polite">
             {messages.map((msg, index) => (
               <div key={index} className={`chatbot-msg ${msg.role}`}>
                 <div className="chatbot-msg-bubble">
@@ -183,7 +184,7 @@ const ChatBot = () => {
               onKeyDown={handleKeyPress}
               disabled={isLoading || availableModels.length === 0}
             />
-            <button onClick={handleSend} disabled={isLoading || !input.trim() || availableModels.length === 0}>
+            <button onClick={handleSend} disabled={isLoading || !input.trim() || availableModels.length === 0} aria-label="Send message">
               <FaPaperPlane />
             </button>
           </div>

@@ -13,10 +13,10 @@
 }
 
 .page-title-underline {
-  width: 50px;
-  height: 5px;
+  width: 3.125rem;
+  height: 0.3125rem;
   background-color: $accent-color;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
 .about-text {
@@ -56,7 +56,7 @@
 
 .stats-item {
   flex: 1;
-  min-width: 150px;
+  min-width: 9.375rem;
 }
 
 .stats-value {
@@ -83,18 +83,18 @@
 }
 
 .skills-badge {
-  background-color: #2b2b2c;
+  background-color: $surface-highlight;
   color: $text-main;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-size: 0.875rem;
   font-weight: 500;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 
   &:hover {
     color: $accent-color;
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
   }
 }
 
@@ -121,15 +121,15 @@
 }
 
 .tradeoff-card {
-  background-color: #1a1a1b;
-  border: 1px solid #2b2b2c;
+  background-color: $surface-color;
+  border: 1px solid $surface-highlight;
   border-radius: 1rem;
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.625rem 1.5625rem rgba(0,0,0,0.3);
     border-color: $accent-color;
   }
 }

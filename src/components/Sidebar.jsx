@@ -58,12 +58,12 @@ const Sidebar = () => {
 
         <ul className="sidebar__social-list">
           <li className="sidebar__social-item">
-            <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">
+            <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
               <FaLinkedin />
             </a>
           </li>
           <li className="sidebar__social-item">
-            <a href="https://github.com/manujharitwal" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/manujharitwal" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <FaGithub />
             </a>
           </li>

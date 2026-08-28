@@ -1,19 +1,77 @@
-$bg-color: #0f0f10;
-$surface-color: #1e1e1f;
-$border-color: #383838;
-$text-main: #fafafa;
-$text-muted: #d6d6d6;
-$text-light: #a3a3a3;
-$accent-color: #ffdb70;
+:root, [data-theme="dark"] {
+  --bg-color: #0f0f10;
+  --surface-color: #1e1e1f;
+  --border-color: #383838;
+  --text-main: #fafafa;
+  --text-muted: #d6d6d6;
+  --text-light: #a3a3a3;
+  --accent-color: #ffdb70;
+  
+  // Adjusted colors for hover states
+  --accent-hover: #e5c565; // ~10% darker than #ffdb70
+  --nav-bg: rgba(43, 43, 44, 0.75); // rgba(#2b2b2c, 0.75)
+  --surface-highlight: #2b2b2c;
+}
 
+[data-theme="light"] {
+  --bg-color: #f9f9f9;
+  --surface-color: #ffffff;
+  --border-color: #e5e7eb;
+  --text-main: #111827;
+  --text-muted: #4b5563;
+  --text-light: #6b7280;
+  --accent-color: #3b82f6; // Blue accent
+  
+  --accent-hover: #2563eb; 
+  --nav-bg: rgba(255, 255, 255, 0.75);
+  --surface-highlight: #e5e7eb;
+}
+
+[data-theme="neo-brutal"] {
+  --bg-color: #ffda79;
+  --surface-color: #f8a5c2;
+  --border-color: #000000;
+  --text-main: #000000;
+  --text-muted: #000000;
+  --text-light: #333333;
+  --accent-color: #ff5252; // Red accent
+  
+  --accent-hover: #e63946; 
+  --nav-bg: rgba(248, 165, 194, 0.85); // Matches surface
+  --surface-highlight: #f38fb2;
+}
+
+// Map SCSS variables to CSS variables for backward compatibility
+$bg-color: var(--bg-color);
+$surface-color: var(--surface-color);
+$border-color: var(--border-color);
+$text-main: var(--text-main);
+$text-muted: var(--text-muted);
+$text-light: var(--text-light);
+$accent-color: var(--accent-color);
+$accent-hover: var(--accent-hover);
+$nav-bg: var(--nav-bg);
+$surface-highlight: var(--surface-highlight);
+
+// Keep these as pure SCSS since they are used in media queries
 $primary-gradient-start: #ffdb70;
 $primary-gradient-end: #ffb703;
 
-$screen-mobile: 480px;
-$screen-mobile-max: 767px;
-$screen-tablet: 768px;
-$screen-desktop: 1024px;
-$screen-desktop-lg: 1250px;
+$screen-mobile: 30rem;
+$screen-mobile-max: 47.9375rem;
+$screen-tablet: 48rem;
+$screen-desktop: 64rem;
+$screen-desktop-lg: 78.125rem;
+
+// Mixins
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 0.125rem solid var(--accent-color);
+    outline-offset: 0.25rem;
+    border-radius: inherit;
+    transition: outline-color 0.3s ease;
+  }
+}
 
 @mixin flex-center {
   display: flex;
