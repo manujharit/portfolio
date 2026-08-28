@@ -1,12 +1,14 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import ChatBot from "./components/ChatBot";
-import { Outlet, useLocation } from "react-router";
+import React, { lazy } from 'react';
+const ChatBot = lazy(() => import('./components/ChatBot'));
+import { useOutlet, useLocation } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.scss";
 
 const App = () => {
   const location = useLocation();
+  const currentOutlet = useOutlet();
 
   return (
     <div className="app-container">
@@ -22,11 +24,13 @@ const App = () => {
             transition={{ duration: 0.3 }}
             className="page-content"
           >
-            <Outlet />
+            {currentOutlet}
           </motion.div>
         </AnimatePresence>
       </div>
-      <ChatBot />
+      <React.Suspense fallback={null}>
+        <ChatBot />
+      </React.Suspense>
     </div>
   );
 };

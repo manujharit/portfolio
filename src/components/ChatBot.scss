@@ -14,9 +14,9 @@
     bottom: 2rem;
   }
 
-  @media (max-width: $screen-mobile-max) {
-    bottom: 1rem;
-    right: 1rem;
+  @media (max-width: $screen-desktop) {
+    bottom: 6rem;
+    right: 1.5rem;
     
     &.open {
       bottom: 0;
