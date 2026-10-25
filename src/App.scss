@@ -65,10 +65,21 @@
 @media (max-width: $screen-mobile-max) {
   .app-container {
     padding-bottom: 5rem;
+    overflow-x: hidden;
   }
   
   .main-content {
     padding: 1rem;
     border-radius: 1rem;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .page-content {
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }

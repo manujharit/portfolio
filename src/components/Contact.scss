@@ -16,6 +16,8 @@
   grid-template-columns: 1fr;
   gap: 1.25rem;
   margin: 2.5rem 0 3.5rem;
+  width: 100%;
+  max-width: 100%;
 
   @media (min-width: $screen-tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -31,7 +33,16 @@
   align-items: center;
   gap: 1.25rem;
   position: relative;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+  @media (max-width: $screen-mobile-max) {
+    padding: 1rem 0.85rem;
+    gap: 0.75rem;
+  }
 
   &:hover {
     transform: translateY(-0.1875rem);
@@ -50,6 +61,13 @@
     justify-content: center;
     font-size: 1.25rem;
     flex-shrink: 0;
+
+    @media (max-width: $screen-mobile-max) {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.1rem;
+      border-radius: 0.5rem;
+    }
   }
 
   &__pulse-dot {
@@ -74,6 +92,7 @@
   &__content {
     flex: 1;
     min-width: 0;
+    overflow: hidden;
   }
 
   &__title {
@@ -83,6 +102,10 @@
     font-weight: 600;
     letter-spacing: 0.05em;
     margin-bottom: 0.25rem;
+
+    @media (max-width: $screen-mobile-max) {
+      font-size: 0.7rem;
+    }
   }
 
   &__value {
@@ -90,6 +113,11 @@
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
+    word-break: break-word;
+
+    @media (max-width: $screen-mobile-max) {
+      font-size: 0.85rem;
+    }
   }
 
   &__link {
@@ -101,7 +129,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    max-width: 100%;
     transition: color 0.2s ease;
+
+    @media (max-width: $screen-mobile-max) {
+      font-size: 0.85rem;
+    }
 
     &:hover {
       color: $accent-color;
@@ -112,6 +145,11 @@
     color: $text-light;
     font-size: 0.8rem;
     display: block;
+    word-break: break-word;
+
+    @media (max-width: $screen-mobile-max) {
+      font-size: 0.75rem;
+    }
   }
 
   &__copy-btn {
@@ -128,6 +166,12 @@
     transition: all 0.2s ease;
     flex-shrink: 0;
 
+    @media (max-width: $screen-mobile-max) {
+      width: 2rem;
+      height: 2rem;
+      font-size: 0.75rem;
+    }
+
     &:hover {
       color: $accent-color;
       transform: scale(1.05);
@@ -143,6 +187,11 @@
     display: flex;
     gap: 0.75rem;
     margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+
+    @media (max-width: $screen-mobile-max) {
+      gap: 0.4rem;
+    }
   }
 
   .social-pill {
@@ -157,6 +206,13 @@
     font-weight: 500;
     text-decoration: none;
     transition: all 0.2s ease;
+    white-space: nowrap;
+
+    @media (max-width: $screen-mobile-max) {
+      padding: 0.2rem 0.5rem;
+      font-size: 0.75rem;
+      gap: 0.3rem;
+    }
 
     &:hover {
       color: $accent-color;
