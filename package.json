@@ -5,7 +5,8 @@
   "sideEffects": [
     "*.css",
     "*.scss",
-    "*.sass"
+    "*.sass",
+    "./src/i18n.js"
   ],
   "description": "",
   "homepage": "https://manujharit.github.io/portfolio/",
