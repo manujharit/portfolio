@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="navbar__list">
         <li className="navbar__item">
-          <NavLink to="/" className={({ isActive }) => (isActive ? "navbar__link active" : "navbar__link")}>{t("nav.about")}</NavLink>
+          <NavLink to="/" end className={({ isActive }) => (isActive ? "navbar__link active" : "navbar__link")}>{t("nav.about")}</NavLink>
         </li>
         <li className="navbar__item">
           <NavLink to="/resume" className={({ isActive }) => (isActive ? "navbar__link active" : "navbar__link")}>{t("nav.resume")}</NavLink>

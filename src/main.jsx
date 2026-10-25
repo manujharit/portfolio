@@ -1,7 +1,7 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { createBrowserRouter, RouterProvider, useLocation } from "react-router";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router";
 
 import About from "./components/About.jsx";
 import Resume from "./components/Resume.jsx";
@@ -26,6 +26,10 @@ const AppRouter = createBrowserRouter([{
     {
       path: '/portfolio',
       element: <Portfolio />
+    },
+    {
+      path: '*',
+      element: <Navigate to="/" replace />
     }
   ]
 }]);
