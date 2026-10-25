@@ -1,0 +1,21 @@
+{
+  "short_name": "Manuj Haritwal",
+  "name": "Manuj Haritwal — Senior Software Engineer",
+  "description": "Portfolio of Manuj Haritwal, Senior Software Engineer specializing in React.js, TypeScript, and high-performance UI architecture.",
+  "icons": [
+    {
+      "src": "/src/assets/ManujPhoto.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/src/assets/ManujPhoto.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f0f10",
+  "theme_color": "#ffdb70",
+  "display": "standalone"
+}

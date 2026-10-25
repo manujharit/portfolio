@@ -1,11 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router";
 
-import About from "./components/About.jsx";
-import Resume from "./components/Resume.jsx";
-import Portfolio from "./components/Portfolio.jsx";
+const About = lazy(() => import("./components/About.jsx"));
+const Resume = lazy(() => import("./components/Resume.jsx"));
+const Portfolio = lazy(() => import("./components/Portfolio.jsx"));
+const Contact = lazy(() => import("./components/Contact.jsx"));
 import "../index.scss";
 import "./i18n";
 
@@ -26,6 +27,10 @@ const AppRouter = createBrowserRouter([{
     {
       path: '/portfolio',
       element: <Portfolio />
+    },
+    {
+      path: '/contact',
+      element: <Contact />
     },
     {
       path: '*',

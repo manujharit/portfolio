@@ -2,14 +2,20 @@
   "nav": {
     "about": "Sobre mí",
     "resume": "Currículum",
-    "portfolio": "Portafolio"
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
   },
   "sidebar": {
     "softwareEngineer": "Ingeniero de Software",
+    "availableForWork": "Disponible para trabajar",
+    "availableStatusTooltip": "Abierto a roles de ingeniería de software y colaboraciones",
     "showContacts": "Mostrar Contactos",
     "email": "Correo",
+    "copyEmail": "Copiar Correo",
+    "emailCopied": "¡Copiado al portapapeles!",
     "location": "Ubicación",
-    "downloadCv": "Descargar CV"
+    "downloadCv": "Descargar CV",
+    "getInTouch": "Contáctame"
   },
   "about": {
     "aboutMe": "Sobre Mí",
@@ -104,5 +110,43 @@
     "noModels": "No se encontraron modelos",
     "chatPlaceholder": "Pregúntame sobre el currículum de Manuj...",
     "chatPlaceholderNoModels": "Conecta Ollama para chatear..."
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente, un puesto de ingeniería o simplemente quieres saludar? ¡Me encantaría saber de ti!",
+    "statusCardTitle": "Disponibilidad",
+    "statusCardValue": "Abierto a Oportunidades",
+    "statusCardSub": "Tiempo completo • Remoto • Contrato",
+    "emailCardTitle": "Correo",
+    "emailCardSub": "Respuesta directa en menos de 24h",
+    "locationCardTitle": "Ubicación",
+    "locationCardSub": "Jaipur, India (Abierto a Remoto / Reubicación)",
+    "socialCardTitle": "Perfiles Sociales",
+    "socialCardSub": "Conecta en LinkedIn y GitHub",
+    "formTitle": "Envíame un Mensaje",
+    "formSubtitle": "Completa el formulario a continuación o comunícate directamente.",
+    "fullName": "Tu Nombre",
+    "fullNamePlaceholder": "ej. Juan Pérez",
+    "email": "Tu Correo Electrónico",
+    "emailPlaceholder": "ej. juan@empresa.com",
+    "subject": "Tema / Consulta",
+    "subjectSelectPlaceholder": "Selecciona el tipo de consulta...",
+    "subjectOptions": {
+      "fullTime": "Oportunidad a Tiempo Completo",
+      "contract": "Proyecto por Contrato / Freelance",
+      "consulting": "Arquitectura Técnica y Consultoría",
+      "general": "Consulta General / Saludo"
+    },
+    "message": "Tu Mensaje",
+    "messagePlaceholder": "Cuéntame sobre el rol, proyecto o en qué te gustaría colaborar...",
+    "sendMessage": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successTitle": "¡Mensaje Enviado con Éxito!",
+    "successText": "¡Gracias por contactarme! Tu mensaje ha sido recibido. Te responderé a la brevedad.",
+    "sendAnother": "Enviar Otro Mensaje",
+    "orEmailDirectly": "O envía un correo directo a",
+    "validationName": "Por favor ingresa tu nombre.",
+    "validationEmail": "Por favor ingresa un correo electrónico válido.",
+    "validationMessage": "Por favor ingresa un mensaje (al menos 10 caracteres)."
   }
 }

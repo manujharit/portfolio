@@ -133,3 +133,5 @@ dist
 .vscode
 .vercel
 .env*
+playwright-report/
+test-results/

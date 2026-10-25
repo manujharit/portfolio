@@ -2,14 +2,20 @@
   "nav": {
     "about": "About",
     "resume": "Resume",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "contact": "Contact"
   },
   "sidebar": {
     "softwareEngineer": "Software Engineer",
+    "availableForWork": "Available for Work",
+    "availableStatusTooltip": "Actively open to software engineering roles & collaborations",
     "showContacts": "Show Contacts",
     "email": "Email",
+    "copyEmail": "Copy Email",
+    "emailCopied": "Copied to Clipboard!",
     "location": "Location",
-    "downloadCv": "Download CV"
+    "downloadCv": "Download CV",
+    "getInTouch": "Get in Touch"
   },
   "about": {
     "aboutMe": "About Me",
@@ -104,5 +110,43 @@
     "noModels": "No models found",
     "chatPlaceholder": "Ask me about Manuj's resume...",
     "chatPlaceholderNoModels": "Connect Ollama to chat..."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Have a project in mind, an engineering role, or just want to say hi? I'd love to hear from you!",
+    "statusCardTitle": "Availability",
+    "statusCardValue": "Open to Opportunities",
+    "statusCardSub": "Full-Time • Remote • Contract",
+    "emailCardTitle": "Email",
+    "emailCardSub": "Direct response within 24h",
+    "locationCardTitle": "Location",
+    "locationCardSub": "Jaipur, India (Open to Remote / Relocation)",
+    "socialCardTitle": "Social Profiles",
+    "socialCardSub": "Connect on LinkedIn & GitHub",
+    "formTitle": "Send Me a Message",
+    "formSubtitle": "Fill out the form below or reach out directly.",
+    "fullName": "Your Name",
+    "fullNamePlaceholder": "e.g. Sarah Connor",
+    "email": "Your Email",
+    "emailPlaceholder": "e.g. sarah@company.com",
+    "subject": "Topic / Inquiry",
+    "subjectSelectPlaceholder": "Select inquiry type...",
+    "subjectOptions": {
+      "fullTime": "Full-Time Opportunity",
+      "contract": "Contract / Freelance Project",
+      "consulting": "Technical Architecture & Consulting",
+      "general": "General Inquiry / Say Hi"
+    },
+    "message": "Your Message",
+    "messagePlaceholder": "Tell me about the role, project, or what you'd like to collaborate on...",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent Successfully!",
+    "successText": "Thank you for reaching out! Your message has been received. I'll get back to you shortly.",
+    "sendAnother": "Send Another Message",
+    "orEmailDirectly": "Or send a direct email to",
+    "validationName": "Please enter your name.",
+    "validationEmail": "Please enter a valid email address.",
+    "validationMessage": "Please enter a message (at least 10 characters)."
   }
 }

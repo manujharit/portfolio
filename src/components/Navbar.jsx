@@ -18,6 +18,9 @@ const Navbar = () => {
         <li className="navbar__item">
           <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "navbar__link active" : "navbar__link")}>{t("nav.portfolio")}</NavLink>
         </li>
+        <li className="navbar__item">
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? "navbar__link active" : "navbar__link")}>{t("nav.contact")}</NavLink>
+        </li>
       </ul>
       <div className="navbar__actions">
         <LanguageSwitcher />

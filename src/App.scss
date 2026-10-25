@@ -25,6 +25,28 @@
   margin-top: 1rem;
 }
 
+.page-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+
+  &__spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid $border-color;
+    border-top-color: $accent-color;
+    border-radius: 50%;
+    animation: loader-spin 0.8s linear infinite;
+  }
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 // --- Media Queries ---
 @media (max-width: $screen-desktop) {
   .app-container {
