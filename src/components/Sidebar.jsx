@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { GMAIL, LINKEDIN } from "../configs/configs";
+import { GMAIL, LINKEDIN, GITHUB } from "../configs/configs";
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdOutlineExpandMore } from "react-icons/md";
 import ManujPhoto from "../assets/ManujPhoto.png";
@@ -65,7 +65,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li className="sidebar__social-item">
-            <a href="https://github.com/manujharitwal" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <a href={GITHUB} target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <FaGithub />
             </a>
           </li>
