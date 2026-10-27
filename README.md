@@ -2,7 +2,7 @@
 
 A modern, high-performance developer portfolio built with **React 19**, **Vite**, **Framer Motion**, and custom **SCSS**. Featuring an interactive contact portal, dynamic theme system, multi-language internationalization, an integrated AI assistant, and architecture-focused case studies.
 
-🌐 **Live Demo**: [https://manujharit.github.io/portfolio/](https://manujharit.github.io/portfolio/)
+🌐 **Live Demo**: [https://manujharitwal.vercel.app/](https://manujharitwal.vercel.app/)
 
 ---
 

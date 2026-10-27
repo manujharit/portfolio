@@ -9,7 +9,7 @@
     "./src/i18n.js"
   ],
   "description": "",
-  "homepage": "https://manujharit.github.io/portfolio/",
+  "homepage": "https://manujharitwal.vercel.app/",
   "scripts": {
     "predeploy": "npm run build",
     "dev": "vite",

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://manujharit.github.io/portfolio/sitemap.xml
+Sitemap: https://manujharitwal.vercel.app/sitemap.xml

@@ -8,7 +8,7 @@ Welcome, AI Agent! This document provides a complete technical blueprint, archit
 
 - **Owner**: Manuj Haritwal (Senior Frontend / Full-Stack Engineer)
 - **Application Type**: React 19 Single Page Application (SPA) with Vercel Serverless API Functions
-- **Production URL**: [https://manujharit.github.io/portfolio/](https://manujharit.github.io/portfolio/)
+- **Production URL**: [https://manujharitwal.vercel.app/](https://manujharitwal.vercel.app/)
 - **Core Purpose**: Showcase professional experience, technical case studies, engineering trade-offs, architecture decisions, and an interactive AI assistant for recruiters and engineering managers.
 
 ---

@@ -25,7 +25,7 @@ Here is Manuj's background:
 - **Education**: B.Tech in Computer Science & Engineering from Dehradun Institute of Technology (2017-2021), CGPA 7.44.
 - **Core Skills**: React.js, Redux, JavaScript (ES6+), TypeScript, Tailwind CSS, Bootstrap, SCSS, HTML5, CSS3, Jest, Playwright, Node.js, Express.js, MongoDB, MySQL.
 - **Awards**: INSTA Rise Award (Infosys), Client Recognition, Pat on the Back (Metacube).
-- **Contact**: Email: manuj.haritwal01@gmail.com, Phone: +91 9414245053, LinkedIn: https://linkedin.com/in/manuj-haritwal, GitHub: https://github.com/manujharit, Portfolio: https://manujharit.github.io/portfolio/
+- **Contact**: Email: manuj.haritwal01@gmail.com, Phone: +91 9414245053, LinkedIn: https://linkedin.com/in/manuj-haritwal, GitHub: https://github.com/manujharit, Portfolio: https://manujharitwal.vercel.app/
 
 If asked a question outside of this scope, politely redirect them to contact Manuj via his [email](mailto:manuj.haritwal01@gmail.com) or [LinkedIn](https://linkedin.com/in/manuj-haritwal).
 `;
