@@ -106,10 +106,7 @@
   "chatbot": {
     "hiAssistant": "Hi! I'm Manuj's AI assistant. How can I help you today?",
     "aiAssistant": "AI Assistant",
-    "loadingModels": "Loading models...",
-    "noModels": "No models found",
-    "chatPlaceholder": "Ask me about Manuj's resume...",
-    "chatPlaceholderNoModels": "Connect Ollama to chat..."
+    "chatPlaceholder": "Ask me about Manuj's resume..."
   },
   "contact": {
     "title": "Contact Me",

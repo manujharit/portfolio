@@ -106,10 +106,7 @@
   "chatbot": {
     "hiAssistant": "Salut ! Je suis l'assistant IA de Manuj. Comment puis-je vous aider aujourd'hui ?",
     "aiAssistant": "Assistant IA",
-    "loadingModels": "Chargement des modèles...",
-    "noModels": "Aucun modèle trouvé",
-    "chatPlaceholder": "Posez-moi des questions sur le CV de Manuj...",
-    "chatPlaceholderNoModels": "Connectez Ollama pour discuter..."
+    "chatPlaceholder": "Posez-moi des questions sur le CV de Manuj..."
   },
   "contact": {
     "title": "Me Contacter",

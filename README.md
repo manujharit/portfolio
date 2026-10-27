@@ -27,15 +27,15 @@ A modern, high-performance developer portfolio built with **React 19**, **Vite**
 | **Animation** | Framer Motion 12 |
 | **Internationalization** | i18next, react-i18next |
 | **Icons & Markdown** | React Icons, React Markdown, Remark GFM |
-| **Serverless Backend** | Vercel Serverless Functions (`/api/chat`, `/api/models`, `/api/contact`) |
-
+| **Serverless Backend** | Vercel Serverless Functions (`/api/chat`, `/api/contact`) |
+ 
 ---
 
 ## 📂 Project Structure
 
 ```
 portfolio/
-├── api/                   # Serverless API routes (Chat, Models, Contact)
+├── api/                   # Serverless API routes (Chat, Contact)
 ├── src/
 │   ├── assets/            # Static assets & profile media
 │   ├── components/        # Modular React components

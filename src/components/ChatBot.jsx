@@ -5,6 +5,8 @@ import remarkGfm from 'remark-gfm';
 import { useTranslation } from "react-i18next";
 import './ChatBot.scss';
 
+const MODEL_NAME = 'gemma4:31b-cloud';
+
 const ChatBot = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +15,6 @@ const ChatBot = () => {
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  
-  const [availableModels, setAvailableModels] = useState([]);
-  const [selectedModel, setSelectedModel] = useState('');
-  const [isFetchingModels, setIsFetchingModels] = useState(false);
 
   const messagesEndRef = useRef(null);
 
@@ -30,30 +28,8 @@ const ChatBot = () => {
     }
   }, [messages, isOpen]);
 
-  // Fetch models on mount
-  useEffect(() => {
-    const fetchModels = async () => {
-      setIsFetchingModels(true);
-      try {
-        const res = await fetch('/api/models');
-        if (res.ok) {
-          const data = await res.json();
-          setAvailableModels(data.models || []);
-          if (data.models && data.models.length > 0) {
-            setSelectedModel(data.models[0]);
-          }
-        }
-      } catch (err) {
-        console.error('Failed to fetch models:', err);
-      } finally {
-        setIsFetchingModels(false);
-      }
-    };
-    fetchModels();
-  }, []);
-
   const handleSend = async () => {
-    if (!input.trim() || !selectedModel) return;
+    if (!input.trim() || isLoading) return;
 
     const userMessage = { role: 'user', text: input };
     const newMessages = [...messages, userMessage];
@@ -71,7 +47,7 @@ const ChatBot = () => {
         body: JSON.stringify({
           message: userMessage.text,
           history: messages,
-          model: selectedModel
+          model: MODEL_NAME
         })
       });
 
@@ -124,22 +100,6 @@ const ChatBot = () => {
             </div>
             
             <div className="chatbot-header-controls">
-              {availableModels.length > 0 ? (
-                <select 
-                  className="model-select" 
-                  value={selectedModel} 
-                  onChange={(e) => setSelectedModel(e.target.value)}
-                  disabled={isLoading}
-                  aria-label="Select AI Model"
-                >
-                  {availableModels.map(m => (
-                    <option key={m} value={m}>{m}</option>
-                  ))}
-                </select>
-              ) : (
-                <span className="model-fallback">{isFetchingModels ? t("chatbot.loadingModels") : t("chatbot.noModels")}</span>
-              )}
-              
               <button className="chatbot-close-btn" onClick={() => setIsOpen(false)} aria-label="Close Assistant">
                 <FaTimes />
               </button>
@@ -180,13 +140,13 @@ const ChatBot = () => {
           <div className="chatbot-input-area">
             <input
               type="text"
-              placeholder={availableModels.length === 0 ? t("chatbot.chatPlaceholderNoModels") : t("chatbot.chatPlaceholder")}
+              placeholder={t("chatbot.chatPlaceholder")}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyPress}
-              disabled={isLoading || availableModels.length === 0}
+              disabled={isLoading}
             />
-            <button onClick={handleSend} disabled={isLoading || !input.trim() || availableModels.length === 0} aria-label="Send message">
+            <button onClick={handleSend} disabled={isLoading || !input.trim()} aria-label="Send message">
               <FaPaperPlane />
             </button>
           </div>

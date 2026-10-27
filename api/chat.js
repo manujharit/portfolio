@@ -64,19 +64,17 @@ export default async function handler(req, res) {
       fetch: customFetch
     });
 
-    const { message, history, model } = req.body;
+    const { message, history } = req.body;
 
     if (!message) {
       return res.status(400).json({ error: 'Message is required' });
     }
 
-    if (!model) {
-      return res.status(400).json({ error: 'Model is required' });
-    }
+    const model = 'gemma4:31b-cloud';
 
     const messages = [
       { role: 'system', content: systemInstruction },
-      ...history.map(msg => ({
+      ...(history || []).map(msg => ({
         role: msg.role === 'model' ? 'assistant' : 'user',
         content: msg.text
       })),
